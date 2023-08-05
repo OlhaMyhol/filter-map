@@ -1,5 +1,5 @@
 @@include('templates/head.html')
-@@include('templates/header.html')
+
 
 
 
@@ -12,16 +12,19 @@
             </div>
             <div class="column">
                 <label for="ageFilter">Age (from 19 to 90):</label>
-                <input type="range" id="ageFilter" name="ageFilter" min="19" max="74">
+                <input type="range" id="ageFilter" name="ageFilter" min="19" max="90">
             </div>
             <div class="column">
-                <label for="filterForward">Forward</label>
-                <input type="radio" id="filterForward" name="filterForward" value="Forward" />
-                <label for="filterMidfielder">Midfielder</label>
-                <input type="radio" id="filterDefender" name="filterDefender" value="Midfielder" />
-                <label for="all">Defender</label>
-                <input type="radio" id="all" name="filterDefender" value="all"  checked/>
+                <label for="positionFilterForward">Forward</label>
+                <input type="radio" id="positionForward" name="positionFilter" value="Forward" />
+                <label for="positionMidfielder">Midfielder</label>
+                <input type="radio" id="positionMidfielder" name="positionFilter" value="Midfielder" />
+                <label for="positionDefender">Defender</label>
+                <input type="radio" id="positionDefender" name="positionFilter" value="Defender" />
+                <label for="all">All</label>
+                <input type="radio" id="all" name="positionFilter" value="all" checked />
             </div>
+        </div>
         </div>
        
 
@@ -32,7 +35,7 @@
                 </div>
                 <div class="person-name"> Andres Iniesta</div>
                 <div class="person-age">39</div>
-                <div class="person-gender">Midfielder</div>
+                <div class="person-position">Midfielder</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -40,7 +43,7 @@
                 </div>
                 <div class="person-name">Diego Maradona</div>
                 <div class="person-age">60</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -48,15 +51,15 @@
                 </div>
                 <div class="person-name">Lionel Messi</div>
                 <div class="person-age">36</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
-                    <img src="assets/img/Luka-Modric.png" class="img-fluid" alt="photo">
+                    <img src="assets/img/RobertLewandowski.png" class="img-fluid" alt="photo">
                 </div>
-                <div class="person-name">Luka Modric</div>
-                <div class="person-age">37</div>
-                <div class="person-gender">Midfielder</div>
+                <div class="person-name">Robert Lewandowski</div>
+                <div class="person-age">34</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -64,7 +67,7 @@
                 </div>
                 <div class="person-name"> Karim Benzema</div>
                 <div class="person-age">35</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -72,15 +75,15 @@
                 </div>
                 <div class="person-name">Roberto Karlos</div>
                 <div class="person-age">50</div>
-                <div class="person-gender">Defender</div>
+                <div class="person-position">Defender</div>
             </div>
             <div class="user">
                 <div class="person-photo">
-                    <img src="assets/img/CristianoRonaldo.png" class="img-fluid" alt="photo">
+                    <img src="assets/img/cristiano-ronaldo.png" class="img-fluid" alt="photo">
                 </div>
                 <div class="person-name">Cristiano-Ronaldo</div>
                 <div class="person-age">38</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -88,7 +91,7 @@
                 </div>
                 <div class="person-name">Batistuta Gabriel</div>
                 <div class="person-age">54</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -96,7 +99,7 @@
                 </div>
                 <div class="person-name">Paolo Maldini</div>
                 <div class="person-age">55</div>
-                <div class="person-gender">Defender</div>
+                <div class="person-position">Defender</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -104,7 +107,7 @@
                 </div>
                 <div class="person-name">Erling Haaland</div>
                 <div class="person-age">23</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -112,7 +115,7 @@
                 </div>
                 <div class="person-name">Pele</div>
                 <div class="person-age">82</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -120,7 +123,7 @@
                 </div>
                 <div class="person-name">David Beckham</div>
                 <div class="person-age">48</div>
-                <div class="person-gender">Midfielder</div>
+                <div class="person-position">Midfielder</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -128,7 +131,7 @@
                 </div>
                 <div class="person-name">Bruno Fernandes</div>
                 <div class="person-age">28</div>
-                <div class="person-gender">Midfielder</div>
+                <div class="person-position">Midfielder</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -136,7 +139,7 @@
                 </div>
                 <div class="person-name"> Angel Di Maria</div>
                 <div class="person-age">35</div>
-                <div class="person-gender">Midfielder</div>
+                <div class="person-position">Midfielder</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -144,15 +147,15 @@
                 </div>
                 <div class="person-name"> Kylian Mbappe</div>
                 <div class="person-age">24</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
-                    <img src="assets/img/Shevchenko.png" class="img-fluid" alt="photo">
+                    <img src="assets/img/andrej-shevchenko.png" class="img-fluid" alt="photo">
                 </div>
-                <div class="person-name">Shevchenko</div>
+                <div class="person-name"> Andriy Shevchenko</div>
                 <div class="person-age">46</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -160,7 +163,7 @@
                 </div>
                 <div class="person-name">Marcus Rashford</div>
                 <div class="person-age">25</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -168,7 +171,7 @@
                 </div>
                 <div class="person-name">Mohamed Salah</div>
                 <div class="person-age">31</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -176,7 +179,7 @@
                 </div>
                 <div class="person-name">Michael Mudryk</div>
                 <div class="person-age">22</div>
-                <div class="person-gender">Midfielder</div>
+                <div class="person-position">Midfielder</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -184,7 +187,7 @@
                 </div>
                 <div class="person-name">Nesta Sandro</div>
                 <div class="person-age">47</div>
-                <div class="person-gender">Midfielder</div>
+                <div class="person-position">Midfielder</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -192,7 +195,7 @@
                 </div>
                 <div class="person-name">Neymar</div>
                 <div class="person-age">31</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -200,7 +203,7 @@
                 </div>
                 <div class="person-name">Ronaldinho</div>
                 <div class="person-age">43</div>
-                <div class="person-gender">Midfielder</div>
+                <div class="person-position">Midfielder</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -208,15 +211,15 @@
                 </div>
                 <div class="person-name">Virgil van Dijk</div>
                 <div class="person-age">32</div>
-                <div class="person-gender">Defender</div>
+                <div class="person-position">Defender</div>
             </div>
             <div class="user">
                 <div class="person-photo">
                     <img src="assets/img/xavi.png" class="img-fluid" alt="photo">
                 </div>
-                <div class="person-name">Xavier Hernandez </div>
+                <div class="person-name">Xavier Hernandez</div>
                 <div class="person-age">43</div>
-                <div class="person-gender">Midfielder</div>
+                <div class="person-position">Midfielder</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -224,7 +227,7 @@
                 </div>
                 <div class="person-name">Zinedine Zidane</div>
                 <div class="person-age">51</div>
-                <div class="person-gender">Midfielder</div>
+                <div class="person-position">Midfielder</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -232,7 +235,7 @@
                 </div>
                 <div class="person-name">Zlatan Ibrahimovic</div>
                 <div class="person-age">41</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             <div class="user">
                 <div class="person-photo">
@@ -240,15 +243,15 @@
                 </div>
                 <div class="person-name"> Oleksandr Zinchenko</div>
                 <div class="person-age">26</div>
-                <div class="person-gender">Defender</div>
+                <div class="person-position">Defender</div>
             </div>
             <div class="user">
                 <div class="person-photo">
                     <img src="assets/img/ronaldo-zubastik.png" class="img-fluid" alt="photo">
                 </div>
-                <div class="person-name">Ronaldo</div>
+                <div class="person-name">Ronaldo Nazario</div>
                 <div class="person-age">46</div>
-                <div class="person-gender">Forward</div>
+                <div class="person-position">Forward</div>
             </div>
             
             <div class="user">
@@ -257,15 +260,39 @@
                 </div>
                 <div class="person-name">Rivaldo</div>
                 <div class="person-age">51</div>
-                <div class="person-gender">Midfielder</div>
+                <div class="person-position">Midfielder</div>
+            </div>
+            <div class="user">
+                <div class="person-photo">
+                    <img src="assets/img/Luka-Modric.png" class="img-fluid" alt="photo">
+                </div>
+                <div class="person-name">Luka Modric</div>
+                <div class="person-age">37</div>
+                <div class="person-position">Midfielder</div>
+            </div>
+            <div class="user">
+                <div class="person-photo">
+                    <img src="assets/img/HarryKane.png" class="img-fluid" alt="photo">
+                </div>
+                <div class="person-name">Harry Kane</div>
+                <div class="person-age">30</div>
+                <div class="person-position">Forward</div>
+            </div>
+            <div class="user">
+                <div class="person-photo">
+                    <img src="assets/img/JohanCruyff.png" class="img-fluid" alt="photo">
+                </div>
+                <div class="person-name">Johan Cruyff</div>
+                <div class="person-age">68</div>
+                <div class="person-position">Midfielder</div>
             </div>
             
             
         </div>
     </main>
-  
-    <script src="js/bootstrap.bundle.min.js"></script>
-   
+    <!-- <script src="js/jquery.fancybox.min.js"></script> -->
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
 

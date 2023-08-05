@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+label{
+    color: white;
+}
 .users-container,
 .sort-container {
     display: grid;
@@ -12,15 +15,15 @@
     max-width: 1450px;
     padding: 18px 12px;
     margin: 100px auto;
-    background-color: #99f9c4;;
+    background-color: black;
     box-shadow: 1px 10px 21px -6px rgb(61, 63, 79);
     border-radius: 10px;
 }
 
 .user {
     padding: 15px 30px;
-    border: 1px solid #5eef36;
-    background-color: #1dd530;
+    border: 1px solid #050505;
+    background-color: #31f405;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
